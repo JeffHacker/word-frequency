@@ -18,14 +18,14 @@ for word in list_to_analyze: # class work
         histogram[word] = 1
 
 
-# list(histogram.items())
-# print(histogram)
-# histogram = sorted((v, k) for k, v in histogram.items()) # Google search
-#  print(histogram)
+list(histogram.items())
+print(histogram)
+histogram = reversed(sorted((v, k) for k, v in histogram.items())) # Google search modded by another Google search
+print(histogram)
 
 
-for key in sorted(histogram):
-	print(key, ':', histogram[key])
+# for key in reversed(sorted(histogram)):
+#	print(key, ':', histogram[key])
 
 
 # analyze()
