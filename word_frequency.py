@@ -3,7 +3,19 @@ import os
 os.system("clear")
 # import collections # Google search
 
-with open('sample.txt', ) as temp_file:
+# adding user input to select file to analyze
+print("What file would you like to choose?")
+print("\n")
+print("Here is a list of your choices:")
+print("------------")
+print("sample.txt")
+print("the_young_explorer.rtf")
+print("phil_the_fiddler.rtf")
+print("war_and_peace.rtf")
+print("------------")
+file_to_analyze = input("Which do you choose?")
+
+with open(file_to_analyze, ) as temp_file:
     text_to_analyze = temp_file.read()
     # got help on the \s from Soren
     text_to_analyze = re.sub(r'[^A-Za-z\s]', "", text_to_analyze.lower())
