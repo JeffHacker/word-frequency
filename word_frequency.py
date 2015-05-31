@@ -16,5 +16,6 @@ for word in list_to_analyze:  # class work
     else:
         histogram[word] = 1
 
-histogram_list = histogram.items()
-print(histogram_list)
+histogram_list = list(histogram.items())
+
+print(histogram_list[1:20])
