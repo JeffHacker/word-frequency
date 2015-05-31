@@ -26,8 +26,25 @@ histogram = word_frequency(list_to_analyze)
 # def sorted_by_val():
 sorted_by_val = sorted(histogram.items(), key=lambda t: t[1], reverse=True)
 
+# _____________
+
+hash_a, hash_b = sorted_by_val[0]
+hash_mult = 50 / int(hash_b)
+# print("hash mult is {}".format(hash_mult))
+
+print("Here are the top 20 words.")
+print("\n")
 counter = 0
-print(sorted_by_val[0])
-# print(type(sorted_by_val))
-# histogram_list = histogram.items()
-# print(histogram_list)
+while counter < 20:
+    word, word_count = sorted_by_val[counter]
+    # print("word {}".format(word))
+    # print("word count {}".format(int(word_count)))
+    counter += 1
+    hashes = word_count * hash_mult
+    # print(hashes)
+    # print(word)
+    # print(word_count)
+    print(word + "\n" + "#" * int(hashes))
+print("\n")
+print("\n")
+print("\n")
