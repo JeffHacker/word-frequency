@@ -4,7 +4,7 @@ os.system("clear")
 # import collections # Google search
 
 # adding user input to select file to analyze
-print("What file would you like to choose?")
+print("What file would you like to do a word count on?  Choose one!")
 print("\n")
 print("Here is a list of your choices:")
 print("------------")
