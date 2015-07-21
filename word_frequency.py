@@ -43,7 +43,7 @@ def word_frequency(list_to_analyze):
                    'will', 'with', 'would', 'yet', 'you', 'your')
 
     for word in list_to_analyze:  # class work
-        if wordin ignore_list:
+        if word in ignore_list:
             pass
         else:
             if word in histogram:
